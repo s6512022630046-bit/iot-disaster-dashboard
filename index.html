@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Smart Disaster Dashboard</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="container">
+
+<header>
+
+<h1>🌎 Smart Disaster Dashboard</h1>
+
+<p id="time">Loading...</p>
+
+</header>
+
+<section class="weather glass">
+
+<div id="weatherIcon">☀️</div>
+
+<h2 id="temp">--.--°C</h2>
+
+<p id="weatherText">Loading...</p>
+
+</section>
+
+<section class="card glass">
+
+<h3>🌤 Environment</h3>
+
+<div class="row">
+
+<span>Temperature</span>
+
+<span id="temperature">--</span>
+
+</div>
+
+<div class="row">
+
+<span>Humidity</span>
+
+<span id="humidity">--</span>
+
+</div>
+
+<div class="row">
+
+<span>Light Status</span>
+
+<span id="lightStatus">--</span>
+
+</div>
+
+</section>
+
+<section class="card glass">
+
+<h3>🌫 Air Quality</h3>
+
+<div class="row">
+
+<span>PM2.5</span>
+
+<span id="pm25">--</span>
+
+</div>
+
+</section>
+
+<section class="card glass">
+
+<h3>🌊 Water Monitoring</h3>
+
+<div class="row">
+
+<span>Dam</span>
+
+<span id="dam">--</span>
+
+</div>
+
+<div class="row">
+
+<span>Sea</span>
+
+<span id="sea">--</span>
+
+</div>
+
+<div class="row">
+
+<span>Water Height</span>
+
+<span id="waterHeight">--</span>
+
+</div>
+
+<div class="row">
+
+<span>Water Volume</span>
+
+<span id="waterVolume">--</span>
+
+</div>
+
+</section>
+
+<section class="card glass">
+
+<h3>💧 Reservoir Capacity</h3>
+
+<div class="progress">
+
+<div id="progressBar"></div>
+
+</div>
+
+<p id="reservoirText">0%</p>
+
+</section>
+
+<section class="card glass">
+
+<h3>🚨 System Status</h3>
+
+<div class="row">
+
+<span>Status</span>
+
+<span id="systemStatus">Loading...</span>
+
+</div>
+
+</section>
+
+<section class="card glass">
+
+<h3>📈 Temperature History</h3>
+
+<canvas id="tempChart"></canvas>
+
+</section>
+
+<section class="card glass">
+
+<h3>📈 PM2.5 History</h3>
+
+<canvas id="pmChart"></canvas>
+
+</section>
+
+<section class="card glass">
+
+<h3>📈 Water Level History</h3>
+
+<canvas id="waterChart"></canvas>
+
+</section>
+
+<footer>
+
+<p>Powered by ESP32 + Thinger.io</p>
+
+</footer>
+
+</div>
+
+</body>
+
+</html>
